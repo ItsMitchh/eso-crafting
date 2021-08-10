@@ -1,0 +1,164 @@
+<html>
+<head>
+<title>Crafting</title>
+<script src="crafting.js"></script>
+</head>
+<body onload="populateAllItems()">
+<p>
+Updated 9/30/2021, if anything is missing, file a GitHub ticket. 
+</p>
+<p>
+<table>
+<tr>
+<td>Type</td>
+<td>Item</td>
+<td>Level</td>
+<td>Material (calculated)</td>
+<td>Style</td>
+<td>Trait</td>
+<td>Improvement</td>
+<td>Set</td>
+</tr>
+<tr>
+    <td><select id="armorweapon0" onchange="itemTypeChanged(0)"></select></td>
+    <td><select id="itemType0" onchange="itemChanged(0)"></select></td>
+    <td><select id="level0" onchange="populateMats(0)"></select></td>
+    <td><input type="text" readonly size="20" id="mats0"></input></td>
+    <td><select id="style0" onchange="styleChanged(0)"></select></td>
+    <td><select id="trait0" onchange="traitChanged(0)"></select></td>
+    <td><select id="improvement0" onchange="calculateTotalMaterials()"></select></td>
+    <td><select id="set0" onchange="setChanged(0)"></select></td>
+</tr>
+<tr>
+    <td><select id="armorweapon1" onchange="itemTypeChanged(1)"></select></td>
+    <td><select id="itemType1" onchange="itemChanged(1)"></select></td>
+    <td><select id="level1" onchange="populateMats(1)"></select></td>
+    <td><input type="text" readonly size="20" id="mats1"></input></td>
+    <td><select id="style1" onchange="styleChanged(1)"></select></td>
+    <td><select id="trait1" onchange="traitChanged(1)"></select></td>
+    <td><select id="improvement1" onchange="calculateTotalMaterials()"></select></td>
+    <td><select id="set1" onchange="setChanged(1)"></select></td>
+</tr>
+<tr>
+    <td><select id="armorweapon2" onchange="itemTypeChanged(2)"></select></td>
+    <td><select id="itemType2" onchange="itemChanged(2)"></select></td>
+    <td><select id="level2" onchange="populateMats(2)"></select></td>
+    <td><input type="text" readonly size="20" id="mats2"></input></td>
+    <td><select id="style2" onchange="styleChanged(2)"></select></td>
+    <td><select id="trait2" onchange="traitChanged(2)"></select></td>
+    <td><select id="improvement2" onchange="calculateTotalMaterials()"></select></td>
+    <td><select id="set2" onchange="setChanged(2)"></select></td>
+</tr>
+<tr>
+    <td><select id="armorweapon3" onchange="itemTypeChanged(3)"></select></td>
+    <td><select id="itemType3" onchange="itemChanged(3)"></select></td>
+    <td><select id="level3" onchange="populateMats(3)"></select></td>
+    <td><input type="text" readonly size="20" id="mats3"></input></td>
+    <td><select id="style3" onchange="styleChanged(3)"></select></td>
+    <td><select id="trait3" onchange="traitChanged(3)"></select></td>
+    <td><select id="improvement3" onchange="calculateTotalMaterials()"></select></td>
+    <td><select id="set3" onchange="setChanged(3)"></select></td>
+</tr>
+<tr>
+    <td><select id="armorweapon4" onchange="itemTypeChanged(4)"></select></td>
+    <td><select id="itemType4" onchange="itemChanged(4)"></select></td>
+    <td><select id="level4" onchange="populateMats(4)"></select></td>
+    <td><input type="text" readonly size="20" id="mats4"></input></td>
+    <td><select id="style4" onchange="styleChanged(4)"></select></td>
+    <td><select id="trait4" onchange="traitChanged(4)"></select></td>
+    <td><select id="improvement4" onchange="calculateTotalMaterials()"></select></td>
+    <td><select id="set4" onchange="setChanged(4)"></select></td>
+</tr>
+<tr>
+    <td><select id="armorweapon5" onchange="itemTypeChanged(5)"></select></td>
+    <td><select id="itemType5" onchange="itemChanged(5)"></select></td>
+    <td><select id="level5" onchange="populateMats(5)"></select></td>
+    <td><input type="text" readonly size="20" id="mats5"></input></td>
+    <td><select id="style5" onchange="styleChanged(5)"></select></td>
+    <td><select id="trait5" onchange="traitChanged(5)"></select></td>
+    <td><select id="improvement5" onchange="calculateTotalMaterials()"></select></td>
+    <td><select id="set5" onchange="setChanged(5)"></select></td>
+</tr>
+<tr>
+    <td><select id="armorweapon6" onchange="itemTypeChanged(6)"></select></td>
+    <td><select id="itemType6" onchange="itemChanged(6)"></select></td>
+    <td><select id="level6" onchange="populateMats(6)"></select></td>
+    <td><input type="text" readonly size="20" id="mats6"></input></td>
+    <td><select id="style6" onchange="styleChanged(6)"></select></td>
+    <td><select id="trait6" onchange="traitChanged(6)"></select></td>
+    <td><select id="improvement6" onchange="calculateTotalMaterials()"></select></td>
+    <td><select id="set6" onchange="setChanged(6)"></select></td>
+</tr>
+<tr>
+    <td><select id="armorweapon7" onchange="itemTypeChanged(7)"></select></td>
+    <td><select id="itemType7" onchange="itemChanged(7)"></select></td>
+    <td><select id="level7" onchange="populateMats(7)"></select></td>
+    <td><input type="text" readonly size="20" id="mats7"></input></td>
+    <td><select id="style7" onchange="styleChanged(7)"></select></td>
+    <td><select id="trait7" onchange="traitChanged(7)"></select></td>
+    <td><select id="improvement7" onchange="calculateTotalMaterials()"></select></td>
+    <td><select id="set7" onchange="setChanged(7)"></select></td>
+</tr>
+<tr>
+    <td><select id="armorweapon8" onchange="itemTypeChanged(8)"></select></td>
+    <td><select id="itemType8" onchange="itemChanged(8)"></select></td>
+    <td><select id="level8" onchange="populateMats(8)"></select></td>
+    <td><input type="text" readonly size="20" id="mats8"></input></td>
+    <td><select id="style8" onchange="styleChanged(8)"></select></td>
+    <td><select id="trait8" onchange="traitChanged(8)"></select></td>
+    <td><select id="improvement8" onchange="calculateTotalMaterials()"></select></td>
+    <td><select id="set8" onchange="setChanged(8)"></select></td>
+</tr>
+<tr>
+    <td><select id="armorweapon9" onchange="itemTypeChanged(9)"></select></td>
+    <td><select id="itemType9" onchange="itemChanged(9)"></select></td>
+    <td><select id="level9" onchange="populateMats(9)"></select></td>
+    <td><input type="text" readonly size="20" id="mats9"></input></td>
+    <td><select id="style9" onchange="styleChanged(9)"></select></td>
+    <td><select id="trait9" onchange="traitChanged(9)"></select></td>
+    <td><select id="improvement9" onchange="calculateTotalMaterials()"></select></td>
+    <td><select id="set9" onchange="setChanged(9)"></select></td>
+</tr>
+<tr>
+    <td><select id="armorweapon10" onchange="itemTypeChanged(10)"></select></td>
+    <td><select id="itemType10" onchange="itemChanged(10)"></select></td>
+    <td><select id="level10" onchange="populateMats(10)"></select></td>
+    <td><input type="text" readonly size="20" id="mats10"></input></td>
+    <td><select id="style10" onchange="styleChanged(10)"></select></td>
+    <td><select id="trait10" onchange="traitChanged(10)"></select></td>
+    <td><select id="improvement10" onchange="calculateTotalMaterials()"></select></td>
+    <td><select id="set10" onchange="setChanged(10)"></select></td>
+</tr>
+</table>
+</p>
+<p>
+<table>
+<tr>
+<td>Total materials</td>
+<td>Total style materials</td>
+<td>Total trait materials</td>
+<td>Total improvement materials</td>
+</tr>
+<tr>
+<td>
+<textarea id="totalMats" rows="12" cols="25">
+</textarea>
+</td>
+<td>
+<textarea id="totalStyleMats" rows="12" cols="25">
+</textarea>
+</td>
+<td>
+<textarea id="totalTraitMats" rows="12" cols="25">
+</textarea>
+</td>
+<td>
+<textarea id="totalImpMats" rows="12" cols="25">
+</textarea>
+</td>
+</tr>
+</table>
+</p>
+</body>
+
+</html>
