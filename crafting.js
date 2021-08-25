@@ -107,7 +107,7 @@ var setArray = [
 "Daring Corsair (3 traits)", 
 "Dauntless Combatant (3 traits)", 
 "Death's Wind (2 traits)", 
-"Diamond's Victory (2 traits)",  
+"Diamond's Victory (5 traits)",  
 "Dragon's Appetite (7 traits)", 
 "Eternal Hunt (9 traits)", 
 "Eyes of Mara (8 traits)", 
