@@ -1,3 +1,4 @@
+
 td,th {
     border: 1px solid rgb(190, 190, 190);
     padding: 10px;
@@ -7,19 +8,6 @@ td {
     text-align: center;
 }
 
-tr:nth-child(even) {
-    background-color: #eee;
-}
-
-th[scope="col"] {
-    background-color: #696969;
-    color: #fff;
-}
-
-th[scope="row"] {
-    background-color: #d7d9f2;
-}
-
 caption {
     padding: 10px;
     caption-side: bottom;
@@ -27,23 +15,24 @@ caption {
 
 table {
     border-collapse: collapse;
-    border: 2px solid rgb(200, 200, 200);
-    letter-spacing: 1px;
+    letter-spacing: ;
     font-family: sans-serif;
     font-size: .8rem;
 }
 
 
-@media (prefers-color-scheme: white) {
-  body {
-    color: #eee;
-    background: #121212;
-  }
-
-  body a {
-    color: #809fff;
-  }
-}
 body{ 
     font-family: sans-serif;
+	background-color: #343a40;
+	color: white ;
+}
+select{
+    background: #343a40;
+	color: white !important;
+}
+textarea {
+  color: white ;
+    }
+input:read-only {
+  color: white;
 }
