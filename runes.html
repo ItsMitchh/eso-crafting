@@ -1,0 +1,64 @@
+<!DOCTYPE html>   
+<html lang="en">
+<link rel="icon" type="image/svg+xml" href="css/favicon.svg"/>   
+<head>   
+<meta charset="utf-8">   
+<title>ESO Runes and Glyphs Table</title>   
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">   
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
+<script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+</head>  
+<body style="margin:20px auto">  
+<div class="container">
+<div class="row header" style="text-align:center;">
+<h3>ESO Runes and Glyphs crafting stuff thingies alpha 0.01 </h3>
+<h4>All information on this page is for CP160 enchantments. </h4>
+<h5>This will be updated as I go, not everything will appear at once. Still alpha. </h5>
+</div>
+<table id="myTable" class="table table-striped">  
+        <thead>  
+          <tr>  
+            <th>Glyph Type</th>  
+            <th>Enchantment Name</th>  
+            <th>Effect / Quality </th>  
+            <th>Materials</th>  
+          </tr>  
+        </thead>  
+        <tbody>  
+          <tr>  
+            <td>Armor Glyph </td>  
+            <td>Glpyh of Health</td>  
+            <td>Increases max health<br>668 (<b>Ta</b>) 704 (<b>Jejota</b>) 763 (<b>Denata</b>) 802 (<b>Rekuta</b>) 868 (<b>Kuta</b>) </br></td>  
+            <td>Repora  + Oko + Quality Glyph</td>
+          </tr>  
+          <tr>  
+            <td>Armor Glyph</td>  
+            <td>Glyph of Magicka</td>  
+            <td>Increases max magicka<br>668 (<b>Ta</b>) 704 (<b>Jejota</b>) 763 (<b>Denata</b>) 802 (<b>Rekuta</b>) 868 (<b>Kuta</b>) </br></td>  
+            <td>Repora + Makko + Quality Glyph</td>  
+          </tr>  
+          <tr>  
+            <td>Armor Glyph</td>  
+            <td>Glyph of Stamina</td>  
+            <td>Increases max magicka<br>668 (<b>Ta</b>) 704 (<b>Jejota</b>) 763 (<b>Denata</b>) 802 (<b>Rekuta</b>) 868 (<b>Kuta</b>) </br></td>  
+            <td>Repora + Deni + Quality Glyph </td>  
+          </tr>  
+		   <tr>  
+            <td>Armor Glyph</td>  
+            <td>Glyph of Prismatic Defense </td>  
+            <td>Increases Max Health, Magicka and Stamina <br>668 (<b>Ta</b>) 704 (<b>Jejota</b>) 763 (<b>Denata</b>) 802 (<b>Rekuta</b>) 868 (<b>Kuta</b>) </br></td>  
+            <td>Repora + Hakeijo + Quality Glyph</td>  
+          </tr>  
+        </tbody>  
+      </table>  
+	  </div>
+</body>  
+<script>
+$(document).ready(function(){
+    $('#myTable').dataTable();
+});
+</script>
+</html>  
