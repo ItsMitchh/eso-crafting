@@ -1,63 +1,161 @@
+<!DOCTYPE html>
 <html lang="en">
-<link rel="icon" type="image/svg+xml" href="css/favicon.svg"/>   
-<head>   
-<meta charset="utf-8">   
-<title>ESO Runes and Glyphs Table</title>   
-<link href="css/bootstrap.min.css" rel="stylesheet">   
-<script src="css/jquery.min.js"></script>
-<link rel="stylesheet" href="css/jquery.dataTables.min.css"></style>
-<script type="text/javascript" src="css/jquery.dataTables.min.js"></script>
-<script type="text/javascript" src="css/bootstrap.min.js"></script>
-
-</head>  
-<body style="margin:20px auto">  
-<div class="container">
-<div class="row header" style="text-align:center;">
-<h3>ESO Runes and Glyphs crafting stuff thingies alpha 0.01 </h3>
-<h4>All information on this page is for CP160 enchantments. </h4>
-<h5>This will be updated as I go, not everything will appear at once. Still alpha. </h5>
-</div>
-<table id="myTable" class="table table-striped">  
-        <thead>  
-          <tr>  
-            <th>Glyph Type</th>  
-            <th>Enchantment Name</th>  
-            <th>Effect / Quality </th>  
-            <th>Materials</th>  
-          </tr>  
-        </thead>  
-        <tbody>  
-          <tr>  
-            <td>Armor Glyph </td>  
-            <td>Glpyh of Health</td>  
-            <td>Increases max health<br>668 (<b>Ta</b>) 704 (<b>Jejota</b>) 763 (<b>Denata</b>) 802 (<b>Rekuta</b>) 868 (<b>Kuta</b>) </br></td>  
-            <td>Repora  + Oko + Quality Glyph</td>
-          </tr>  
-          <tr>  
-            <td>Armor Glyph</td>  
-            <td>Glyph of Magicka</td>  
-            <td>Increases max magicka<br>668 (<b>Ta</b>) 704 (<b>Jejota</b>) 763 (<b>Denata</b>) 802 (<b>Rekuta</b>) 868 (<b>Kuta</b>) </br></td>  
-            <td>Repora + Makko + Quality Glyph</td>  
-          </tr>  
-          <tr>  
-            <td>Armor Glyph</td>  
-            <td>Glyph of Stamina</td>  
-            <td>Increases max magicka<br>668 (<b>Ta</b>) 704 (<b>Jejota</b>) 763 (<b>Denata</b>) 802 (<b>Rekuta</b>) 868 (<b>Kuta</b>) </br></td>  
-            <td>Repora + Deni + Quality Glyph </td>  
-          </tr>  
-		   <tr>  
-            <td>Armor Glyph</td>  
-            <td>Glyph of Prismatic Defense </td>  
-            <td>Increases Max Health, Magicka and Stamina <br>668 (<b>Ta</b>) 704 (<b>Jejota</b>) 763 (<b>Denata</b>) 802 (<b>Rekuta</b>) 868 (<b>Kuta</b>) </br></td>  
-            <td>Repora + Hakeijo + Quality Glyph</td>  
-          </tr>  
-        </tbody>  
-      </table>  
-	  </div>
-</body>  
-<script>
-$(document).ready(function(){
-    $('#myTable').dataTable();
-});
-</script>
-</html>  
+<head>
+	<link href="css/favicon.svg" rel="icon" type="image/svg+xml">
+	<meta charset="utf-8">
+	<title>ESO Runes and Glyphs Table</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="css/jquery.min.js">
+	</script>
+	<link href="css/jquery.dataTables.min.css" rel="stylesheet">
+	<script src="css/jquery.dataTables.min.js" type="text/javascript">
+	</script>
+	<script src="css/bootstrap.min.js" type="text/javascript">
+	</script>
+</head>
+<body style="margin:20px auto">
+	<div class="container">
+		<div class="row header" style="text-align:center;">
+			<h3>ESO Runes and Glyphs version 0.03</h3>
+			<h4>All information on this page is for CP160 enchantments.</h4>
+			<h5><b>IMPORTANT NOTE</b> Some values may be different, mainly the armor values for: Chest, Pants, Head will be higher than Shoes, Shoulder, Hands and Belt.</h5>
+		</div>
+		<table class="table table-striped" id="myTable">
+			<thead>
+				<tr>
+					<th>Glyph Type</th>
+					<th>Enchantment Name</th>
+					<th>Effect / Quality</th>
+					<th>Materials</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Armor Glyph</td>
+					<td>Glpyh of Health</td>
+					<td>Increases max health<br>
+					668 <b>Ta</b> 704 <b>Jejota</b> 763 <b>Denata</b> 802 <b>Rekuta</b> 868 <b>Kuta</b><br></td>
+					<td>Repora + Oko + Quality Glyph</td>
+				</tr>
+				<tr>
+					<td>Armor Glyph</td>
+					<td>Glyph of Magicka</td>
+					<td>Increases max Magicka<br>
+					668 <b>Ta</b> 704 <b>Jejota</b> 763 <b>Denata</b> 802 <b>Rekuta</b> 868 <b>Kuta</b><br></td>
+					<td>Repora + Makko + Quality Glyph</td>
+				</tr>
+				<tr>
+					<td>Armor Glyph</td>
+					<td>Glyph of Stamina</td>
+					<td>Increases max Stamina<br>
+					668 <b>Ta</b> 704 <b>Jejota</b> 763 <b>Denata</b> 802 <b>Rekuta</b> 868 <b>Kuta</b><br></td>
+					<td>Repora + Oko + Quality Glyph</td>
+				</tr>
+				<tr>
+					<td>Weapon Glyphs</td>
+					<td>Glyph of Absorb Health </td>
+					<td>Deals X Magic Damage and recovers X Health	<br>
+					1461/728 <b>Ta</b> 1544/770 <b>Jejota</b> 1674/833 <b>Denata</b> 1754/874 <b>Rekuta</b> 1900/947 <b>Kuta</b><br></td>
+					<td>Itade + Oko + Quality Glyph</td>
+				</tr>
+				<tr>
+					<td>Weapon Glyphs</td>
+					<td>Glyph of Absorb Magicka</td>
+					<td>Deals X Magic Damage and recovers X Magicka	<br>
+					1461/272 <b>Ta</b> 1544/288 <b>Jejota</b> 1674/312 <b>Denata</b> 1754/312 <b>Rekuta</b> 1900/354  <b>Kuta</b><br></td>
+					<td>Itade + Makko + Quality Glyph</td>
+				</tr>
+				<tr>
+					<td>Weapon Glyphs</td>
+					<td>Glyph of Absorb Stamina</td>
+					<td>Deals X Physical Damage and recovers X Stamina	<br>
+					1461/272 <b>Ta</b> 1544/288 <b>Jejota</b> 1674/312 <b>Denata</b> 1754/312 <b>Rekuta</b> 1900/354  <b>Kuta</b><br></td>
+					<td>Itade + Deni + Quality Glyph</td>
+				</tr>
+				<tr>
+					<td>Weapon Glyphs</td>
+					<td>Glyph of Crushing</td>
+					<td>Reduce the target's Physical and Spell Resistance by X for 5 seconds<br>
+					1247 <b>Ta</b> 1302 <b>Jejota</b> 1408 <b>Denata</b> 1498 <b>Rekuta</b> 1622 <b>Kuta</b><br></td>
+					<td>Itade + Deteri + Quality Glyph</td>
+				</tr>
+				<tr>
+					<td>Weapon Glyphs</td>
+					<td>Glyph of Decrease Health</td>
+					<td>Deals X Oblivion Damage	<br>
+					3747 <b>Ta</b> 3961 <b>Jejota</b> 4294 <b>Denata</b> 4500 <b>Rekuta</b> 4875 <b>Kuta</b><br></td>
+					<td>Itade + Okoma + Quality Glyph</td>
+				</tr>
+				<tr>
+					<td>Weapon Glyphs</td>
+					<td>Glyph of Flame</td>
+					<td>Deals X Fire Damage	<br>
+					1948 <b>Ta</b> 2059 <b>Jejota</b> 2232 <b>Denata</b> 2339	 <b>Rekuta</b> 2534 <b>Kuta</b><br></td>
+					<td>Repora + Rakeipa + Quality Glyph</td>
+				</tr>
+				<tr>
+					<td>Weapon Glyphs</td>
+					<td>Glyph of Foulness</td>
+					<td>Deals X Disease Damage	<br>
+					1948 <b>Ta</b> 2059 <b>Jejota</b> 2232 <b>Denata</b> 2339	 <b>Rekuta</b> 2534 <b>Kuta</b><br></td>
+					<td>Repora + Haoko + Quality Glyph</td>
+				</tr>
+				<tr>
+					<td>Weapon Glyphs</td>
+					<td>Glyph of Frost</td>
+					<td>Deals X Frost Damage	<br>
+					1948 <b>Ta</b> 2059 <b>Jejota</b> 2232 <b>Denata</b> 2339	 <b>Rekuta</b> 2534 <b>Kuta</b><br></td>
+					<td>Repora + Dekeipa + Quality Glyph</td>
+				</tr>
+				<tr>
+					<td>Weapon Glyphs</td>
+					<td>Glyph of Hardening</td>
+					<td>Grants a X point Damage Shield for 5 seconds	<br>
+					2531 <b>Ta</b> 2641 <b>Jejota</b> 2857 <b>Denata</b> 3038 <b>Rekuta</b> 3290 <b>Kuta</b><br></td>
+					<td>Repora + Deteri + Quality Glyph</td>
+				</tr>
+				<tr>
+					<td>Weapon Glyphs</td>
+					<td>Glyph of Poison</td>
+					<td>Deals X Poison Damage	<br>
+					1948 <b>Ta</b> 2059 <b>Jejota</b> 2232 <b>Denata</b> 2339	 <b>Rekuta</b> 2534 <b>Kuta</b><br></td>
+					<td>Repora + Kuoko + Quality Glyph</td>
+				</tr>
+				<tr>
+					<td>Weapon Glyphs</td>
+					<td>Glyph of Prismatic Onslaught</td>
+					<td>Deals X Magic Damage and recovers Y Health, Magicka and Stamina	<br>
+					668 <b>Ta</b> 704 <b>Jejota</b> 763 <b>Denata</b> 802 <b>Rekuta</b> 868 <b>Kuta</b><br></td>
+					<td>Itade + Hakeijo + Quality Glyph</td>
+				</tr>
+				<tr>
+					<td>Weapon Glyphs</td>
+					<td>Glyph of Prismatic Onslaught</td>
+					<td>Deals X Magic Damage and recovers ? Health, Magicka and Stamina	<br>
+					3896 <b>Ta</b> 4118 <b>Jejota</b> 4464 <b>Denata</b> 4678 <b>Rekuta</b> 5068 <b>Kuta</b><br></td>
+					<td>Repora + Meip + Quality Glyph</td>
+				</tr>
+				<tr>
+					<td>Weapon Glyphs</td>
+					<td>Glyph of Weakening</td>
+					<td>Reduce the target's Weapon and Spell Damage by X for 5 seconds	<br>
+					268 <b>Ta</b> 282 <b>Jejota</b> 306 <b>Denata</b> 320 <b>Rekuta</b> 348 <b>Kuta</b><br></td>
+					<td>Itade + Okori + Quality Glyph</td>
+				</tr>
+				<tr>
+					<td>Weapon Glyphs</td>
+					<td>Glyph of Weapon Damage</td>
+					<td>Increase your Weapon and Spell Damage by X for 5 seconds <br>
+					268 <b>Ta</b> 282 <b>Jejota</b> 306 <b>Denata</b> 320 <b>Rekuta</b> 348 <b>Kuta</b><br></td>
+					<td>Repora + Okori + Quality Glyph</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<script>
+	   $document.readyfunction{
+	      $'#myTable'.dataTable;
+	   };
+	</script>
+</body>
+</html>
