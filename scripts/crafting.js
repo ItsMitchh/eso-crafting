@@ -104,6 +104,7 @@ var setArray = [
 "Coldharbour's Favorite (8 traits)", 
 "Critical Riposte (3 traits)", 
 "Daedric Trickery (8 traits)", 
+"Deadlands Demolisher (PTS)",
 "Daring Corsair (3 traits)", 
 "Dauntless Combatant (3 traits)", 
 "Death's Wind (2 traits)", 
@@ -116,7 +117,8 @@ var setArray = [
 "Heartland Conqueror (7 traits)", 
 "Hist Bark (7 traits)", 
 "Hunding's Rage (6 traits)", 
-"Innate Axiom (2 traits)", 
+"Innate Axiom (2 traits)",
+"Iron Flask (PTS)",
 "Kagrenac's Hope (8 traits)", 
 "Kvatch Gladiator (5 traits)", 
 "Law of Julianos (6 traits)", 
@@ -155,7 +157,9 @@ var setArray = [
 "Vastarie's Tutelage (3 traits)", 
 "Way of the Arena (8 traits)", 
 "Whitestrake's Retribution (4 traits)", 
-"Willow's Path(6 traits)" ];
+"Willow's Path(6 traits)",
+"Wretched Vitality (PTS)"
+];
 
 var styleArray = [];
 styleArray.push(new Style("Abah's Watch", "polished shilling"));
