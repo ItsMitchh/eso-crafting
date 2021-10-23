@@ -162,6 +162,7 @@ var setArray = [
 ];
 
 var styleArray = [];
+styleArray.push(new Style("No preference", "NULL"));
 styleArray.push(new Style("Abah's Watch", "polished shilling"));
 styleArray.push(new Style("Akaviri", "goldscale"));
 styleArray.push(new Style("Ancestral Akaviri", "burnished goldscale"));
@@ -533,6 +534,7 @@ var jewelry = [ ring, necklace ];
 
 
 var stylePartsKnownHash = new Object();
+stylePartsKnownHash["No preference"] = new StylePartsKnown(" ", true, [], false);
 stylePartsKnownHash["Abah's Watch"] = new StylePartsKnown("Abah's Watch", true, [], false);
 stylePartsKnownHash["Akaviri"] = new StylePartsKnown("Akaviri", true, [], true);
 stylePartsKnownHash['Aldmeri Dominion'] = new StylePartsKnown('Aldmeri Dominion', true, [], false);
