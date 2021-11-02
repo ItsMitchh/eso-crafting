@@ -104,7 +104,7 @@ var setArray = [
 "Coldharbour's Favorite (8 traits)", 
 "Critical Riposte (3 traits)", 
 "Daedric Trickery (8 traits)", 
-"Deadlands Demolisher (PTS)",
+"Deadlands Demolisher (7 traits)",
 "Daring Corsair (3 traits)", 
 "Dauntless Combatant (3 traits)", 
 "Death's Wind (2 traits)", 
@@ -118,7 +118,7 @@ var setArray = [
 "Hist Bark (7 traits)", 
 "Hunding's Rage (6 traits)", 
 "Innate Axiom (2 traits)",
-"Iron Flask (PTS)",
+"Iron Flask (5 traits)",
 "Kagrenac's Hope (8 traits)", 
 "Kvatch Gladiator (5 traits)", 
 "Law of Julianos (6 traits)", 
@@ -158,7 +158,7 @@ var setArray = [
 "Way of the Arena (8 traits)", 
 "Whitestrake's Retribution (4 traits)", 
 "Willow's Path(6 traits)",
-"Wretched Vitality (PTS)"
+"Wretched Vitality (3 traits)"
 ];
 
 var styleArray = [];
